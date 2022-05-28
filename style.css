@@ -22,7 +22,6 @@ body {
     align-items: center;
     justify-content: start;
     width: 60%;
-    height: 100vh;
 }
 
 .instagram-phone {
@@ -83,9 +82,16 @@ body {
     border-radius: 4px;
 }
 
+.instagram-login:hover {
+    background-color: #0084d3;
+    color: #faebd7;
+}
+
 .instagram-logout {
     color: #0095f6;
     margin-top: 1rem;
+    background: transparent;
+    border: none;
 }
 
 .not-account {
@@ -94,6 +100,7 @@ body {
 
 .link-blue {
     color: #0095f6;
+    cursor: pointer;
 }
 
 .get-the-app {
@@ -144,6 +151,9 @@ body {
     .instagram-wrapper {
         width: 90%;
     }
+    .instagram-wrapper div{
+        padding:0;
+    }
 
     .instagram-phone {
         display: none;
@@ -156,4 +166,35 @@ body {
     .group {
         border: 1px solid transparent;
     }
+}
+
+.form-style{
+   flex-direction: column;
+   display: flex;
+   gap: 5px;
+   width: 70%;
+   margin-top: 2rem;
+}
+
+.form-style input{
+    background: #fafafa;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    width: 100%;
+    padding: 9px 0 7px 8px;
+    text-overflow: ellipsis;
+}
+
+
+.form-style button{
+    background: #0095f6;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top:10px;
 }
